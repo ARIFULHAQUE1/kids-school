@@ -8,6 +8,32 @@
 /* shared styles */
 main {
   max-width: 1440px;
+  background-image: url(/assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 140px;
+}
+
+.cards-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 40px 40px 40px;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
 }
 
 .display-flex {
@@ -28,6 +54,10 @@ main {
 
 .color-purple {
   color: #5D58EF;
+}
+
+.color-muted {
+  color: rgba(128, 128, 128, 1);
 }
 
 a {
@@ -112,23 +142,68 @@ nav ul li {
   justify-content: space-between;
   align-items: center;
 }
-.banner-title{
+
+.banner-title {
   font-size: 3.5rem;
   font-weight: 700;
 }
-.banner-content{
+
+.banner-content {
   margin-bottom: 112px;
   width: 50%;
 }
+
 .banner-image img {
   width: 100%;
   max-width: 469px;
 }
 
-/* responsive styles */
+/* ------------Main section styles---------------- */
+
+/* curriculum section */
+.category-cards {
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  margin-top: 60px;
+}
+
+.category-card {
+  height: 477px;
+  width: 368px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.category-card img {
+  padding: 52px 0 24px 0;
+}
+
+#kinder {
+  background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 15%, white 75%);
+  border: 1px solid rgba(222, 245, 255, 1);
+  box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+#elementary {
+  background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 15%, white 75%);
+  border: 1px solid rgba(222, 245, 255, 1);
+  box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+#middle {
+  background: linear-gradient(to bottom, rgba(242, 232, 255, 1)15%, white 75%);
+  border: 1px solid rgba(222, 245, 255, 1);
+  box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* -----------responsive styles----------------- */
 @media screen and (max-width: 576px) {
 
-  header {
+  header,
+  main {
     margin: 12px 0;
   }
 
@@ -149,14 +224,30 @@ nav ul li {
     display: block;
   }
 
-  .banner-section {
+  .banner-section,
+  .category-cards {
     flex-direction: column;
 
   }
+
   .banner-content {
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;  
+    margin-bottom: 40px;
+  }
+
+  .category-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .category-card {
+
+    margin-right: 0px;
+
+  }
 }
 
 /* responsive for medium  devices */
