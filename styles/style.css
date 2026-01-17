@@ -6,17 +6,16 @@
 }
 
 /* shared styles */
-main {
-  max-width: 1440px;
-  background-image: url(/assets/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+section{
   margin: 0 140px;
+ 
 }
-
+main{
+   max-width: 1440px;
+}
 .cards-container {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .card-description {
@@ -31,7 +30,9 @@ main {
   text-align: center;
   padding: 40px 0 0 0;
 }
-
+.subsection-title{
+  margin: 19px 0;
+}
 .card-title {
   font-size: 1.2rem;
 }
@@ -59,7 +60,9 @@ main {
 .color-muted {
   color: rgba(128, 128, 128, 1);
 }
-
+h2{
+  margin-top: 60px;
+}
 a {
   font-size: 1.2rem;
   font-weight: 500;
@@ -68,7 +71,7 @@ a {
 
 .btn-secondary {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
   background-color: #FEA301;
   border: none;
@@ -77,24 +80,47 @@ a {
 }
 
 .btn-primary {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 100;
   color: white;
   background-color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 12px;
 }
-
+.btn-arrow{
+  color: white;
+  background-color: #FEA301;
+  border: none;
+  border-radius: 50%;
+  font-size: 9px;
+}
+.btn-date{
+  color: white;
+  border: none;
+  border-radius: 48px;
+  padding: 5px 8px;
+  transform: translate(38px, -17px);
+}
+#btn-skyblue{
+  background-color: rgba(60, 216, 232, 1);
+}
+.btn-lightgreen{
+  background-color: rgba(149, 178, 38, 1);
+}
+#bnt-purple{
+  background-color: rgba(93, 88, 240, 1);
+}
 /* header section styles */
 header {
-  margin: 12px 140px;
+  max-width: 1440px;
+  margin: 0 140px;
 }
 
 nav {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 186px;
+  gap: 150px; */
   justify-content: space-between;
   align-items: center;
 }
@@ -125,7 +151,6 @@ nav ul li {
 
 .menu-icon {
   height: 32px;
-
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
@@ -138,9 +163,8 @@ nav ul li {
 
 /* banner section styles */
 .banner-section {
-  margin-top: 40px;
-  justify-content: space-between;
   align-items: center;
+  gap: 50px;
 }
 
 .banner-title {
@@ -149,23 +173,30 @@ nav ul li {
 }
 
 .banner-content {
-  margin-bottom: 112px;
-  width: 50%;
+  padding-top:112px;
+  padding-bottom: 112px;
+  width: 65%;
 }
-
+.banner-image{
+ max-width: 469px;
+}
 .banner-image img {
   width: 100%;
-  max-width: 469px;
 }
 
 /* ------------Main section styles---------------- */
 
 /* curriculum section */
+.curriculum-section{
+ background-image: url(/assets/bg.png);
+ backface-visibility: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .category-cards {
   justify-content: space-between;
   align-items: center;
   gap: 28px;
-  margin-top: 60px;
 }
 
 .category-card {
@@ -182,23 +213,73 @@ nav ul li {
 }
 
 #kinder {
-  background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 15%, white 75%);
+  background: linear-gradient(to bottom, rgba(222, 245, 255, 1) ,15%, white);
   border: 1px solid rgba(222, 245, 255, 1);
   box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
 #elementary {
-  background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 15%, white 75%);
+  background: linear-gradient(to bottom, rgba(255, 244, 220, 1), 15%, white);
   border: 1px solid rgba(222, 245, 255, 1);
   box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
 #middle {
-  background: linear-gradient(to bottom, rgba(242, 232, 255, 1)15%, white 75%);
+  background: linear-gradient(to bottom, rgba(242, 232, 255, 1),15%, white);
   border: 1px solid rgba(222, 245, 255, 1);
   box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
+#arrow-btn-container{
+
+  text-align: center;
+}
+.btn-arrow{
+  font-size: 1.4rem;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* ------------Storires section styles------- */
+.stories-container{
+  max-height: 630px;
+  gap: 20px;
+}
+.stories-section{
+  background: linear-gradient(to top,rgba(239, 214, 170, 0.977),30%,white );
+}
+.story-descripton{
+  padding: 0 33px 10px;
+}
+.main-story{
+  background-color: white;
+  border-radius: 16px;
+  width: 50%;
+}
+.main-story img{
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+.sub-stories{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  max-height: 630px;
+}
+.sub-stories img{
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.sub-story{
+  border-radius: 16px;
+  background-color: white;
+}
+#view-btn{
+  text-align: center;
+  padding: 60px;
+}
 /* -----------responsive styles----------------- */
 @media screen and (max-width: 576px) {
 
@@ -216,7 +297,8 @@ nav ul li {
   }
 
   .nav-collapse,
-  .main-title {
+  .main-title,
+  .arrow-btn-container {
     display: none;
   }
 

@@ -16,7 +16,7 @@
 
 <body class="quicksand-regular">
     <header>
-        <nav>
+        <nav class="display-flex">
             <div class="nav-icon display-flex">
                 <img src="/assets/logo.png" alt="">
                 <h2 class="main-title color-secondary">SCHOOL</h2>
@@ -51,7 +51,8 @@
     </header>
 
     <main>
-        <section class="carriculum-section">
+        <section class="curriculum-section">
+
             <h2 class="section-title">Standard Curriculum</h2>
             <div class="cards-container">
                 <div class="category-cards display-flex">
@@ -87,7 +88,81 @@
                     </div>
                 </div>
             </div>
+
+            <div id="arrow-btn-container">
+                <button class="btn-arrow"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="btn-arrow"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
         </section>
+        <div class="stories-section">
+            <section>
+                <h2 class="section-title">Our Stories</h2>
+                <div class="stories-container display-flex cards-container">
+                    <div class="main-story">
+
+                        <img src="/assets/story-1.png" alt="">
+                        <button class="btn-date" id="btn-skyblue">November 19, 2019</small></button>
+
+                        <div class="story-descripton">
+                            <h3 class="subsection-title">
+                                A fun toddler coloring training on
+                                classroom
+                            </h3>
+                            <p class="color-muted">
+                                Beautiful branding for changes by Never Now in Australia.
+                                changes is a platform for open discussion in an inclusive and
+                                collaborative environment, providing the...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sub-stories">
+                        <div class="sub-story">
+
+                            <img src="/assets/story-2.png" alt="">
+                            <button class="btn-date btn-lightgreen"><small>November 19, 2019</small></button>
+
+                            <div class="story-descripton">
+                                <h6 class="subsection-title">Find out if a school fits the
+                                    family’s needs</h6>
+                            </div>
+                        </div>
+
+                        <div class="sub-story">
+                            <img src="/assets/story-3.png" alt="">
+                            <button class="btn-date" id="bnt-purple"><small>November 19, 2019</small></button>
+                            <div class="story-descripton">
+                                <h6 class="subsection-title">Summer math & literacy
+                                    centres for kids</h6>
+                            </div>
+
+                        </div>
+                        <div class="sub-story">
+                            <img src="/assets/story-4.png" alt="">
+                            <button class="btn-date btn-lightgreen"><small>September 19,2019</small></button>
+                            <div class="story-descripton">
+                                <h6 class="subsection-title">Classroom management
+                                    techniques for new tutors</h6>
+                            </div>
+
+                        </div>
+                        <div class="sub-story">
+                            <img src="/assets/story-5.png" alt="">
+                            <button class="btn-date btn-lightgreen"><small>July 19, 2019</small></button>
+                            <div class="story-descripton">
+                                <h6 class="subsection-title">Conversation rhymes
+                                    improve kids listening</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="view-btn">
+                    <button class="btn-primary">View All</button>
+                </div>
+
+            </section>
+        </div>
     </main>
     <footer>
 
