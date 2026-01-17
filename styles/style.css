@@ -278,14 +278,15 @@ nav ul li {
 }
 #view-btn{
   text-align: center;
-  padding: 60px;
+  padding-bottom: 60px;
 }
 /* -----------responsive styles----------------- */
 @media screen and (max-width: 576px) {
 
   header,
-  main {
-    margin: 12px 0;
+  main,
+  section {
+  margin: 12px 0;
   }
 
   nav {
@@ -298,18 +299,18 @@ nav ul li {
 
   .nav-collapse,
   .main-title,
-  .arrow-btn-container {
+  #arrow-btn-container,
+  .main-story {
     display: none;
   }
 
-  .menu-icon {
+  .menu-icon{
     display: block;
   }
 
   .banner-section,
   .category-cards {
     flex-direction: column;
-
   }
 
   .banner-content {
@@ -318,17 +319,13 @@ nav ul li {
     margin-bottom: 40px;
   }
 
-  .category-cards {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-
   .category-card {
-
     margin-right: 0px;
-
+  }
+  .sub-stories{
+width: 100%;
+align-items: center;
+justify-content: center;
   }
 }
 
