@@ -13,6 +13,7 @@ section{
 main{
    max-width: 1440px;
 }
+
 .cards-container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -279,6 +280,42 @@ nav ul li {
 #view-btn{
   text-align: center;
   padding-bottom: 60px;
+}
+/* -------footer section styles------ */
+footer{
+  background: #01ACFD;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 143px;
+  color: white;
+  padding: 123px 228px 174px 140px;
+}
+.footer-description img{
+  height: 82px;
+  width: 82px;
+}
+.footer-descriptions{
+  font-size: 1rem;
+  font-weight: 100;
+}
+.about-section ul{
+  margin-top: 32px ;
+}
+.about-section ul li{
+  list-style: none;
+  margin-bottom: 20px ;
+}
+.about-section ul li a{
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.social-links img{
+  display: inline;
+  height: 35px;
+width: 35px;
 }
 /* -----------responsive styles----------------- */
 @media screen and (max-width: 576px) {
